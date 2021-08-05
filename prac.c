@@ -1,25 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
 
-int main()
+ int main()
 {
-	int i, n, t,r,sum=0;
-	scanf("%d",&t);
-	
-	while(t>0)
-	{
-		scanf("%d",&n);
-		
-		while(n!=0)
-		{
-			r=n%10;
-			sum=sum+r;
-			n=n/10;
-		}
-		
-		t--;
-		
-		printf("%d\n",sum);
-		sum=0;
-	}
-	
+    int t; scanf("%d",&t);
+	char a[10];
+    while(t--)
+    	{
+    		scanf("%s",a);
+    		printf("%ld\n",(a[0]-'0' + a[strlen(a)-1] - '0'));
+	  	}
 }
