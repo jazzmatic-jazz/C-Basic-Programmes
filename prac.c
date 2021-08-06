@@ -8,6 +8,9 @@
     while(t--)
     	{
     		scanf("%s",a);
-    		printf("%ld\n",(a[0]-'0' + a[strlen(a)-1] - '0'));
+    		printf("%ld\n",(a[0]-'0' + a[strlen(a)-1]-'0' ));
+    	
+    		printf("%d\n",a[0]-'1');
 	  	}
+	  	
 }
