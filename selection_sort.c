@@ -7,7 +7,7 @@ int swap(int *a, int *b);
 int main()	
 {
 	int size;
-	int arr[]={90,23,101,45,65,28,67,89,34,29};//10,7,8,9,1,5 //90,23,101,45,65,28,67,89,34,29
+	int arr[]={90,90,23,101,45,65,28,67,89,34,29};//10,7,8,9,1,5 //90,23,101,45,65,28,67,89,34,29
 
 	size=sizeof(arr)/sizeof(arr[0]);
 	printf("Size:%d\n",size);
@@ -31,7 +31,7 @@ int pa(int arr[],int size)
 
 int selectsort(int arr[], int size)
 {
-	int i,c, j, min;
+	int i, j, min;
 	
 	for(i=0; i<size-1; i++)
 	{

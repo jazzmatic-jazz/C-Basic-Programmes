@@ -39,8 +39,6 @@ int mergesort(int A[], int l, int r)
 	{
 		m=(l+r)/2;
 		
-		printf ("\n\nMIDDLE:%d\n",m);
-
 		mergesort(A, l, m);
 		mergesort(A, m+1,r);
 		merge(A, l, m, r);
@@ -94,59 +92,5 @@ int merge(int A[], int l, int m, int r)
 	
 	}
 		
-	/*int y=(m-l)+1;
-	int z=(r-m);
-	
-	printf("\nvalue of y:%d\n",y);
-	printf("\nvalue of z:%d\n",z);
-	
-	int L[y],R[z];
-	
-	int i,j ,k=l;
-	
-	for (i=0; i<y; i++)
-	{
-		
-		L[i]=A[l+i];
-	}
-	for (j=0; j<z; j++)
-	{
-		R[j]=A[m+1+j];
-	}
-	
-	i=0, j=0;
-	
-	while (i<y && j<z)
-	{
-		if (L[i]<=R[j])
-		{
-			A[k]=L[i];
-			i++;
-			printf("\n left A[%d] %d \n",k,A[k]);
-			
-		}
-		else
-		{
-			A[k]=R[j];
-			j++;
-			printf("\n right A[%d] %d \n",k,A[k]);
-			
-		}
-			k++;
-	}
-	
-	while (i<y)
-	{
-		A[k]=L[i];
-		i++;
-		k++;
-	}
-	
-	while(j<z)
-	{
-		A[k]=R[j];
-		j++;
-		k++;
-	}*/
 	
 }
