@@ -2,31 +2,40 @@
 
 int main()
 {
-	int t, n,i ,j,count=0;
+	int n, i, j,k,x=1;
+	scanf("%d",&n);
+	int	arr[n][n];
 	
-	scanf("%d",&t);
-	
-	while(t>0 && t<10)
+	for (i=0; i<n; i++)
 	{
-		scanf("%d",&n);
-	
-			for (i=1; i<=n*n; i++)
-		{	
-		
-			printf("%d\t",i);
-			
-			for(j=i; j<=n; j++)
+		for (j=0; j<=i; j++)
+		{
+			for (k=i; k>=0; k--,j++)
 			{
-				printf("%d ",j);
+				arr[j][k]=x++;
 			}
-				
-		
-			
 		}
-		
-		
-		
-		t--;
 	}
+	
+	for (i=0; i<n; i++)
+	{
+		for (j=1+i; j<=n-1; j++)
+		{
+			for (k=n-1; k>i; k--,j++)
+			{
+				arr[j][k]=x++;
+			}
+		}
+	}
+	
+	for(i=0; i<n; i++)
+	{
+		for(j=0; j<n; j++)
+		{
+			printf("%d ",arr[i][j]);
+		}
+		printf("\n");
+	}
+	
 	
 }
