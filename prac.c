@@ -2,10 +2,26 @@
 
 int main()
 {
-	int i, j, k;
+	double gsal;
+	int t, sal;
 	
-	for (i=0; i<n; i++)
+	scanf("%d",&t);
+	
+	while(t>0)
 	{
+		scanf("%d",&sal);
 		
+		if(sal<1500)
+		{
+			gsal=sal+(sal*(0.10))+(sal*(0.90));
+		}
+		else if(sal>=1500)
+		{
+			gsal=sal+500+(sal*(0.98));
+		}
+		
+		t--;
+		printf("%.2lf\n",gsal);
 	}
+	
 }
