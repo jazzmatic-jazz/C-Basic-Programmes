@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 // write a program using conditional operators to determines whether a year entered through the keyboard is a leap year or not.
 /*if year is not divisible by 4 then it is a common year

@@ -2,26 +2,23 @@
 
 int main()
 {
-	double gsal;
-	int t, sal;
-	
+	int t, n, count=0,i;
 	scanf("%d",&t);
-	
+	int arr[1001];
 	while(t>0)
-	{
-		scanf("%d",&sal);
-		
-		if(sal<1500)
+	{	count=0;
+		for(i=0; i<101; i++)
 		{
-			gsal=sal+(sal*(0.10))+(sal*(0.90));
-		}
-		else if(sal>=1500)
-		{
-			gsal=sal+500+(sal*(0.98));
+			scanf("%d",&arr[i]);
+			
+			if(arr[i]==4)
+			{
+				count++;
+			}
+			printf("%d\n",count);
 		}
 		
-		t--;
-		printf("%.2lf\n",gsal);
+		
 	}
 	
 }

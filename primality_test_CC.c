@@ -2,7 +2,7 @@
 
 int main()
 {
-	int t,n,count=0,x=1;
+	int t,n,count=0,i;
 	
 	scanf("%d",&t);
 	
@@ -11,9 +11,25 @@ int main()
 		scanf("%d",&n);
 		count=0;
 		
-	
+		for(i=1; i<=n; i++)
+		{
+			if(n%i==0)
+			{
+				count++;
+				
+			}
+		}
+		if(count==2)
+		{
+			printf("yes");
 			
-		
+		}
+		else
+		{
+			printf("no");
+			
+		}		
+		printf("\n");
 		t--;
 	}
 }
