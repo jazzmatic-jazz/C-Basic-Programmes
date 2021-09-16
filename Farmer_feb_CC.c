@@ -2,35 +2,31 @@
 
 int main()
 {
-	int t,x,y,z, total,j;
-	
+	int x, y, t,sum;
 	scanf("%d",&t);
 	
 	while(t>0)
 	{
 		scanf("%d %d",&x,&y);
-		
-		total=0;
+		int z=1;
 		int count=0;
+		sum=x+y+z;
 		
-		for(z=1; z<=100; z++)
+		printf("%d %d",sum,z);
+		
+		while(z!=9)
 		{
-			total=z+y+x;
-			printf("value of z:%d\t",z);
-			printf("total: %d\n",total);
-			
-			for(j=1; j<=total; j++)
+			if (sum%z==0)
 			{
-				if(total%j==0)
-				{
-					count++;
-				}
+				count++;
 				
-				if (count==2)
-				{
-					printf("\nz:%d\n",z);
-				}
 			}
+			z++;
+		}
+		
+		if(count==2)
+		{
+			printf("%d",z);
 		}
 		
 		
