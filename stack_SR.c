@@ -1,4 +1,4 @@
-#include<stdio.h>
+o#include<stdio.h>
 int push(int arr[],int ptr,int size);
 int pop(int ptr);
 

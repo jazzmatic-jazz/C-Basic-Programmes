@@ -10,31 +10,31 @@ int main()
 	for (i=0; i<100; i++)
 	{	
 		n[i]=z;
-	//	printf("%d ",n[i]);
+		printf("%d ",n[i]);
 		z=z+4;
 	}
-//	printf("\n");
+	printf("\n");
 	for (i=0; i<100; i++)
 	{	
 		e[i]=y;
-	//	printf("%d ",e[i]);
+		printf("%d ",e[i]);
 		y=y+4;
 	}
-//	printf("\n");
+	printf("\n");
 	
 	for (i=0; i<100; i++)
 	{	
 		s[i]=m;
-	//	printf("%d ",s[i]);
+		printf("%d ",s[i]);
 		m=m+4;
 	}
 	
-//	printf("\n");
+	printf("\n");
 	
 	for (i=0; i<100; i++)
 	{	
 		w[i]=u;
-	//	printf("%d ",w[i]);
+		printf("%d ",w[i]);
 		u=u+4;
 	}
 	
