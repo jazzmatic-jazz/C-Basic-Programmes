@@ -39,18 +39,31 @@ struct node *insert(struct node *root, int val)
 	
 }
 
+void inorder(struct node *root)
+{
+	if (root!=NULL)
+	{
+		inorder( root->left);
+		printf("%d ->",root->data);
+		inorder(root->right);
+		
+	}
+}
+
 int main()
 {
 	struct node *root=NULL;
 	
-	root=insert(root,100);
-	printf("%d",root->data);
-	printf("\t%d",root->left);
-	printf("\t%d",root->right);	
-	root=insert(root,50);
-	printf("\n%d",root->left->data);
-	printf("\t%d",root->left);
-	printf("\t%d",root->right);	
+	root=insert(root,10);
+	root=insert(root,5);
+	root=insert(root,2);
+	root=insert(root,11);
+	root=insert(root,15);
+	root=insert(root,6);
+	root=insert(root,7);
+	
+	printf("Inorder traversal: ");
+	inorder(root);
 }
 
 
